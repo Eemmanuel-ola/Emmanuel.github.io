@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">MyPortfolio</a>
+      <button class="nav-toggle" id="nav-toggle">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#portfolio" class="portfolio-link">My Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <img src="Me.jpg" alt="Olabode Emanuel" class="hero-photo">
+    <h1>Hello, I'm Emmanuel</h1>
+    <p>Creative Graphic Designer Specializing in Poster, Leaflets, Flyer and Ads</p>
+    <a href="#portfolio" class="btn">View My Work</a>
+  </section>
+
+  <!-- Featured Work -->
+  <section id="featured-work">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="BR roofing3 mock up 4 by 3.png" alt="BR Roofing" class="animate-in">
+        <h3>BR Roofing Flyer</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="project">
+        <img src="Wind of change.png" alt="Wind of change" class="animate-in">
+        <h3>Project Title 2</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="project">
+        <img src="bible study.png" alt="Project 3" class="animate-in">
+        <h3>Project Title 3</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="project">
+        <img src="independence day worship .png" alt="Project 4" class="animate-in">
+        <h3>Project Title 4</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="project">
+        <img src="Parfait flyer 1.png" alt="Project 5" class="animate-in">
+        <h3>Project Title 5</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="project">
+        <img src="Welcome back.png" alt="Project 6" class="animate-in">
+        <h3>Project Title 6</h3>
+        <p>Brief description of the project.</p>
+      </div>
+    </div>
+    <a href="#portfolio" class="btn">See More</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Hello! I'm Emmanuel, a graphic designer with 7 years of experience in creating visually stunning designs. My passion lies in crafting unique and engaging visual identities for brands. I specialize in leaflet and flyer design, bringing creativity and precision to every project I undertake.</p>
+    <h3>Skills</h3>
+    <ul>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Illustrator</li>
+      <li>Adobe InDesign</li>
+      <li>CorelDRAW</li>
+      <li>Branding & Identity</li>
+      <li>Print Design</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="BR roofing3 mock up 4 by 3.png" alt="Project 1" class="animate-in">
+        <h3>Project Title 1</h3>
+        <p>Role: Lead Designer</p>
+        <p>Tools Used: Adobe Illustrator, Photoshop</p>
+        <p>Description: Detailed description of the project, challenges faced, and the solutions implemented.</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2" class="animate-in">
+        <h3>Project Title 2</h3>
+        <p>Role: Lead Designer</p>
+        <p>Tools Used: Adobe InDesign, Photoshop</p>
+        <p>Description: Detailed description of the project, challenges faced, and the solutions implemented.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>
+        <h3>Leaflet and Flyer Design</h3>
+        <p>Creating visually compelling and effective leaflets and flyers tailored to your brand and message.</p>
+      </li>
+      <li>
+        <h3>Branding and Identity</h3>
+        <p>Developing consistent and engaging brand identities, including logos, business cards, and more.</p>
+      </li>
+      <li>
+        <h3>Print Design</h3>
+        <p>Designing high-quality print materials that stand out, from brochures to posters.</p>
+      </li>
+      <li>
+        <h3>Digital Illustration</h3>
+        <p>Crafting unique illustrations and icons that enhance your brand’s visual storytelling.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Working with [Your Name] was an absolute pleasure. Their creativity and attention to detail resulted in a flyer that exceeded our expectations. Highly recommend!"</p>
+      <h4>- [Client's Name]</h4>
+    </div>
+    <div class="testimonial">
+      <p>"A true professional! [Your Name] took our vision and turned it into a beautiful leaflet that perfectly captured our brand essence. Will definitely work with them again."</p>
+      <h4>- [Client's Name]</h4>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Send" class="btn">
+    </form>
+    <p>Or reach me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

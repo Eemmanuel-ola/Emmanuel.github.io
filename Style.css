@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #004d40, #2a2d2e); /* Deep teal to gunmetal gradient */
+  background-image: url('Shapes.jpg'); /* Background image with shapes */
+  background-size: auto;
+}
+
+h1, h2, h3, h4 {
+  color: #fff; /* White text for contrast */
+}
+
+#hero {
+  background: rgba(76, 76, 76, 0.7); /* Deep gray background with transparency */
+  padding: 10px;
+  text-align: center;
+  max-height: 300px;
+}
+
+#hero h1, p, a{
+  margin: 0px;
+}
+
+
+
+#hero img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+#featured-work, #about-me, #portfolio, #services, #testimonials, #contact {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: rgba(50, 50, 50, 0.8); /* Deep gray background with transparency */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px;
+}
+
+.project {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover img {
+  transform: scale(1.05); /* Zoom effect */
+}
+
+.project:hover {
+  transform: scale(0.98); /* Zoom-out effect */
+}
+
+.btn {
+  background: navy;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 20px; /* Rounded corners */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #001f3f; /* Slightly lighter navy for hover */
+  transform: scale(1.05); /* Zoom effect */
+}
+
+/* Navigation Styles */
+#navbar {
+  background: rgba(50, 50, 50, 0.8); /* Deep gray background with transparency */
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle .hamburger {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+}
+
+.nav-toggle .hamburger::before, .nav-toggle .hamburger::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle .hamburger::before {
+  top: -8px;
+}
+
+.nav-toggle .hamburger::after {
+  bottom: -8px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-link {
+  color: red; /* Highlight color for "My Portfolio" */
+  text-decoration: underline;
+}
+
+.nav-menu a:hover, .portfolio-link:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
